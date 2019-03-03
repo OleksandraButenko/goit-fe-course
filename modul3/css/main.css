@@ -2,6 +2,7 @@ body{
     font-family: "Playfair Display", sans-serif;
     color: #626262;
     font-size: 14px;
+    line-height: 21px;
     margin: 0;
     padding: 0;
 }
@@ -20,7 +21,7 @@ ul,li{
 }
 
 .main-menu-item{
-    padding-left: 100px;
+    margin-left: 100px;
 
 }
 
@@ -28,6 +29,7 @@ ul,li{
     color: #626262;
     text-transform: uppercase;
     text-decoration: none;
+    line-height: 17px;
 }
 
 .main-menu a:hover{
@@ -62,6 +64,7 @@ img{
 h3{
     font-size: 30px;
     margin-bottom: 40px;
+    line-height: 39px;
 }
 
 
@@ -73,9 +76,18 @@ height: 60px;
 border: 1px solid #626262;
 font-size: 20px;
 font-family: "Playfair Display";
+line-height: 24px;
 }
 
-
-
-
-   
+h2.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+ }
