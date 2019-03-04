@@ -1,28 +1,61 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
 body{
     font-family: "Playfair Display", sans-serif;
     color: #626262;
     font-size: 14px;
     line-height: 21px;
-    margin: auto;
-    padding: auto;
 }
 
-ul,li{
-    display: inline-block;
+.container{
+    width: 901px;
+    margin: 0 auto;
 }
 
-.main-header{
-    padding-top: 40px;
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .main-nav{
-   margin-bottom: 70px;
-   margin-left: 280px;
+    padding-top: 78px;
+    padding-bottom: 103px;
+}
+
+.main-menu{
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .main-menu-item{
-    margin-left: 100px;
+    display: inline-block;
+}
 
+.main-menu-item:first-of-type{
+    margin-right: 122px;
+}
+
+.main-menu-item:nth-of-type(2){
+    margin-right: 106px;
+}
+
+.main-menu-item:nth-of-type(3){
+    margin-right: 100px;
+}
+
+.main-menu-item:nth-last-of-type(4){
+    margin-right: 0;
 }
 
 .main-menu a{
@@ -32,62 +65,18 @@ ul,li{
     line-height: 17px;
 }
 
-.main-menu a:hover{
+.main-menu a:hover,
+.main-menu a:focus{
     color: #03a9f4;
 }
 
-.main{
-    display: inline-block;
-}
-
-.main-content{
-   margin-left: 160px;
-}
-
-.content-item{
-    margin-left: 60px;
-    margin-bottom: 100px;
-}
-
-.menu-item{
-    font-family: Ubuntu;
-    text-transform: uppercase;
-    font-weight: 300;
-    color: #b4ad9e;
-    margin-bottom: 5px;
-}
-
-img{
-    margin-bottom: 20px;
-}
-
-h3{
-    font-size: 30px;
-    margin-bottom: 40px;
-    line-height: 39px;
-}
-
-
-.button{
-margin-bottom: 70px;
-margin-left: 480px;
-width: 164px;
-height: 60px;
-border: 1px solid #626262;
-font-size: 20px;
-font-family: "Playfair Display";
-line-height: 24px;
-}
-
-h2.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
+.content{
+    list-style: none;
+    margin: 0;
     padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
- }
+}
+.content-item{
+    display: inline-block;
+    width: 421px;
+    margin-right: 60px;
+}
