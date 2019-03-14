@@ -302,8 +302,8 @@ body {
 
 .box {
     position: absolute;
-    width: 238px;
-    height: 260px;
+    width: 236px;
+    height: 264px;
     background-color: rgb(45%, 45%, 45%, 0.7);
     display: none;
     top: 3%;
