@@ -328,10 +328,11 @@ margin-bottom: 30px;
     border:2px solid red;
 }
 
-.form-list textarea[name="message"]:valid{
+textarea[name="comments"]:valid{
     border:2px solid green;
 }
 
-.form-list textarea[name="message"]:invalid{
+textarea[name="comments"]:invalid{
     border:2px solid red;
 }
+
