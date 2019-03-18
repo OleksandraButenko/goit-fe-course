@@ -61,12 +61,6 @@ img {
 	color: #222222;
 }
 
-.clearfix:after {
-	content:'';
-	display: table;
-	width: 100%;
-	clear: both;
-}
 
 
 .page-header {
@@ -289,7 +283,7 @@ margin-bottom: 30px;
     width: 455px;
     height: 210px;
     padding-left: 20px;
-    border: 1px solid #cccccc;
+   /* border: 1px solid #cccccc;*/
     border-radius: 3px;
     background-color: #ffffff;
     color: #bbbbbb;
@@ -331,5 +325,13 @@ margin-bottom: 30px;
 }
 
 .form-list input[name="name"]:invalid{
+    border:2px solid red;
+}
+
+.form-list textarea[name="message"]:valid{
+    border:2px solid green;
+}
+
+.form-list textarea[name="message"]:invalid{
     border:2px solid red;
 }
