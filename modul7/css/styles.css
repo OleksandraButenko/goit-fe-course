@@ -29,13 +29,9 @@ img {
 }
 
 @font-face {
-    font-family: 'Wisdom Script Regular';
-    font-style: normal;
-    font-weight: normal;
-    font-family: 'WisdomScriptAJ';
-	src: url('./WisdomScriptAJ.eot');
-	src: local('WisdomScriptAJ'), url('./WisdomScriptAJ.woff') format('woff'), url('./WisdomScriptAJ.ttf') format('truetype');
-    }
+        font-family: "Wisdom Script";
+        src: url("../fonts/Wisdom-Script/wisdom-script-cufonfonts-webfont/Wisdom\ Script\ AJ.woff") format("woff");
+       }
 
 /*@font-face {
     font-family: 'Montserrat';
@@ -229,7 +225,6 @@ margin-bottom: 30px;
 .form-list{
     margin: 0 auto;
     width: 942px;
-    height: 212px;
     padding-top: 78px;
 
 }
