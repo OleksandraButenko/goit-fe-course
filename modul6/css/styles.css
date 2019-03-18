@@ -21,7 +21,6 @@ img {
 }
 
 body{
-    max-width: 1200px;
     font-family: "Roboto";
     font-size: 15px;
     color: #999;
@@ -36,6 +35,7 @@ body{
 }
 
 .page-header{
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -75,14 +75,14 @@ body{
 
 .page-menu-link{
     position: absolute;
-    text-decoration: none;
     font-family: "Montserrat";
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #95e1d3;
     text-decoration: none;
     list-style: none;
+    color: #95e1d3;
+    transition: color 0.2s linear;
     
 }
 
@@ -130,6 +130,7 @@ padding-bottom: 50px;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .title::after {
@@ -180,10 +181,6 @@ padding-bottom: 50px;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-}
-
-.description{
-    padding-top: 50px;
 }
 
 .team{
@@ -285,17 +282,21 @@ span{
 
 .icons{
     position: absolute;
-    width: 224px;
-    height: 56px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fce38a;
-    display: flex;
-    justify-content: space-between;
     opacity: 0;
+    background:linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
 }
-
+.icons a{
+    transition: background-color 0.2s linear;
+}
 .facebook {
     top: 0;
     left:0;
@@ -305,8 +306,10 @@ span{
     background-image: url(../img/facebook_1.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;
+    background-color: rgb(185, 90, 34);
     cursor: pointer;
+    transition: background-color 0.2s linear;
+    background-color: #fce38a;
 }
 
 .twitter {
@@ -317,8 +320,9 @@ span{
     background-image: url(../img/twitter_2.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;
+    background-color: #fce38a;
     cursor: pointer;
+    transition: background-color 0.2s linear;
 }
 
 .pinterest {
@@ -328,8 +332,9 @@ span{
     background-image: url(../img/pinterest_3.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;
+    background-color: #fce38a;
     cursor: pointer;
+    transition: background-color 0.2s linear;
 }
 
 .instagram {
@@ -338,8 +343,9 @@ span{
     background-image: url(../img/instagram_4.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;
+    background-color: #fce38a;
     cursor: pointer;
+    transition: background-color 0.2s linear;
 }
 
 .facebook:hover{
@@ -367,30 +373,28 @@ span{
     height: 470px;
 }
 
-/*.team-item-link{
-    position: absolute; 
+.team-item-link{
     display: block;
     width: 100%;
     height: 470px;;
-    background:linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    
     opacity: 1;
+    transform:rotateX(10deg);
+    transition-duration: 0.2s; 
+    transition-timing-function: linear;
 }
-.team-item:hover .team-item-link{
-    position: absolute;
-    top: 0;    
-    left: 0;   
+
+.team-item:hover .team-item-link{   
     display: block;
     width: 100%;
     height: 100%;
     background: transparent;    
     background:linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     box-shadow: 10px 10px 0 0 #95e1d3;
-    transform:rotateX(10deg);
-    transition-duration: 0.2s; 
-    transition-timing-function: linear;
+    transform: translate(-10px, -10px);
     opacity: 1;
 }
-*/
+
 .team-item-link:after{
     content: "";
     opacity: 1;
@@ -401,12 +405,13 @@ span{
     position: absolute;
 }
 
-.team-item-link:hover .icons{
+.team-item:hover .icons{
+    position: absolute;
     opacity: 1;
     z-index: 2;
 }
-
-.team-item-link:hover:after{
+/* 
+.team-item:hover:after{
     position: absolute;
     top: 0;    
     left: 0;   
@@ -421,4 +426,4 @@ span{
     transition-duration: 0.2s; 
     transition-timing-function: linear;
     opacity: 1;
-}
+} */
