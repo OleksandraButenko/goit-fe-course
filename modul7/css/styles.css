@@ -28,7 +28,8 @@ img {
     font-style: normal;
 }
 
-@font-face {
+
+    @font-face {
         font-family: "Wisdom Script";
         src: url("../fonts/Wisdom-Script/wisdom-script-cufonfonts-webfont/Wisdom\ Script\ AJ.woff") format("woff");
        }
@@ -315,4 +316,3 @@ margin-bottom: 30px;
 
 
 }
-
