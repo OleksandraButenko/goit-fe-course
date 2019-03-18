@@ -206,102 +206,6 @@ padding-bottom: 50px;
     margin-bottom: 20px;
 }
 
-
-.team-item-link:hover .team-image{
-    content: "";
-	display: block;
-    width: 100%;
-    height: 100%;    
-    top: 0;    
-    left: 0;   
-    background: transparent;
-    background-image:linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
-    box-shadow: 10px 10px 0 0 #95e1d3;
-    transform:rotateX(10deg);
-    transition-duration: 0.2s; 
-}
-
-/*.team-image:hover .icons{
-    opacity: 1;
-    z-index: 2;
-    position: absolute;
-}*/
-
-.icons{
-    width: 224px;
-    height: 56px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fce38a;
-    display: flex;
-    justify-content: space-between;
-    opacity: 0;
-}
-
-.facebook {
-    top: 0;
-    left:0;
-    height: 56px;
-    width: 56px;
-    border-right: 1px solid #f38181;
-    background-image: url(../img/facebook_1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.twitter {
-    left: 56px;
-    height: 56px;
-    width: 56px;
-    border-right: 1px solid #f38181;
-    background-image: url(../img/twitter_2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.pinterest {
-    height: 56px;
-    width: 56px;
-    border-right: 1px solid #f38181;
-    background-image: url(../img/pinterest_3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.instagram {
-    height: 56px;
-    width: 56px;
-    background-image: url(../img/instagram_4.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.facebook:hover{
-    background-color: #95e1d3;
-}
-
-.twitter:hover{
-    background-color: #95e1d3;
-}
-
-.pinterest:hover{
-    background-color: #95e1d3;
-}
-
-.instagram:hover{
-    background-color: #95e1d3;
-}
-
-
 .team-name{
    text-align: center;
    font-family: "Montserrat";
@@ -374,31 +278,10 @@ span{
  display: flex;
 }
 
-.team-item-link{
-    position: relative;  
+.team-item{
+    position: relative;    
 }
 
-.team-item:hover .icons{
-    opacity: 1;
-    z-index: 2;
-    position: absolute;
-}
-
-.team-item-link:hover:after{
-    position: absolute;
-    content: "";
-	display: block;
-    width: 100%;
-    height: 100%;    
-    top: 0;    
-    left: 0;   
-    background: transparent;
-    background-image:linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
-    box-shadow: 10px 10px 0 0 #95e1d3;
-    transform:rotateX(10deg);
-    transition-duration: 0.2s; 
-    transition-timing-function: linear;
-}
 
 .icons{
     position: absolute;
@@ -439,7 +322,6 @@ span{
 }
 
 .pinterest {
-   
     height: 56px;
     width: 56px;
     border-right: 1px solid #f38181;
@@ -474,4 +356,69 @@ span{
 
 .instagram:hover{
     background-color: #95e1d3;
+}
+
+
+
+
+.team-item{
+    position: relative;
+    width: 380px;
+    height: 470px;
+}
+
+/*.team-item-link{
+    position: absolute; 
+    display: block;
+    width: 100%;
+    height: 470px;;
+    background:linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    opacity: 1;
+}
+.team-item:hover .team-item-link{
+    position: absolute;
+    top: 0;    
+    left: 0;   
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;    
+    background:linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    box-shadow: 10px 10px 0 0 #95e1d3;
+    transform:rotateX(10deg);
+    transition-duration: 0.2s; 
+    transition-timing-function: linear;
+    opacity: 1;
+}
+*/
+.team-item-link:after{
+    content: "";
+    opacity: 1;
+    box-shadow: 10px 10px 0 0 #95e1d3;
+    transform:rotateX(10deg);
+    transition-duration: 0.2s; 
+    transition-timing-function: linear;
+    position: absolute;
+}
+
+.team-item-link:hover .icons{
+    opacity: 1;
+    z-index: 2;
+}
+
+.team-item-link:hover:after{
+    position: absolute;
+    top: 0;    
+    left: 0;   
+    display: block;
+    width: 100%;
+    height: 470px;
+    background: transparent;    
+    background-image:linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    box-shadow: 10px 10px 0 0 #95e1d3;
+    transform:rotateX(10deg);
+    transform: translate(-10px, -10px);
+    transition-duration: 0.2s; 
+    transition-timing-function: linear;
+    opacity: 1;
 }
