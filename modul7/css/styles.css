@@ -240,12 +240,11 @@ margin-bottom: 30px;
     flex-wrap: wrap;
     margin-bottom: 25px;
 }
-
 .name{
     width: 455px;
     height: 50px;
     padding-left: 20px;
-    border: 1px solid #cccccc;
+    /*border: 1px solid #cccccc;*/
     border-radius: 3px;
     background-color: #ffffff;
     margin-bottom: 25px;
@@ -261,7 +260,7 @@ margin-bottom: 30px;
     width: 455px;
     height: 50px;
     padding-left: 20px;
-    border: 1px solid #cccccc;
+    /*border: 1px solid #cccccc;*/
     border-radius: 3px;
     background-color: #ffffff;
     margin-bottom: 25px;
@@ -313,6 +312,24 @@ margin-bottom: 30px;
     margin: 0 auto;
     border-radius: 3px;
     
+}
 
+.form-list input:focus{
+    outline: 0;
+    padding-bottom: 5px;
+}
+.form-list input[type="email"]:valid{
+    border:2px solid green;
+}
 
+.form-list input[name="name"]:valid{
+    border:2px solid green;
+}
+
+.form-list input[type="email"]:invalid{
+    border:2px solid red;
+}
+
+.form-list input[name="name"]:invalid{
+    border:2px solid red;
 }
