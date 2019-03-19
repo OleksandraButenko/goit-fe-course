@@ -370,14 +370,11 @@ span{
 .team-item{
     position: relative;
     width: 380px;
-    height: 470px;
 }
 
 .team-item-link{
     display: block;
     width: 100%;
-    height: 470px;;
-    
     opacity: 1;
     transform:rotateX(10deg);
     transition-duration: 0.2s; 
@@ -387,7 +384,6 @@ span{
 .team-item:hover .team-item-link{   
     display: block;
     width: 100%;
-    height: 100%;
     background: transparent;    
     background:linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     box-shadow: 10px 10px 0 0 #95e1d3;
