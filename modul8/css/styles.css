@@ -227,17 +227,21 @@ img {
 
 .icons{
     position: relative;
+     margin-bottom: 25px;
 }
 
 .icons-two{
     position: relative;
+     margin-bottom: 25px;
 }
 
 .icons-three{
     position: relative;
+     margin-bottom: 25px;
 }
 .icons-four{
     position: relative;
+     margin-bottom: 25px;
 }
 
 .icons::after{
