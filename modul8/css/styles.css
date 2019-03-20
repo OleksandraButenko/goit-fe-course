@@ -135,9 +135,9 @@ img {
 
 .button{
     text-decoration: none;
-    vertical-align: middle;
-     /*text-align: center;
-    /*padding-top: 5px;*/
+    text-align: center;
+      border: 0;
+    line-height: 40px;
     width: 280px;
     height: 40px;
     border-radius: 20px;
@@ -203,8 +203,9 @@ img {
 
 .button-two{
     text-decoration: none;
-    text-align: center;
-    /* padding-top: 5px;*/
+   text-align: center;
+    border: 0;
+    line-height: 40px;
     width: 280px;
     height: 40px;
     border: 2px solid #ff4e50;
