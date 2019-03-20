@@ -136,7 +136,7 @@ img {
 .button{
     text-decoration: none;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
     width: 280px;
     height: 40px;
     border-radius: 20px;
@@ -203,7 +203,7 @@ img {
 .button-two{
     text-decoration: none;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
     width: 280px;
     height: 40px;
     border: 2px solid #ff4e50;
