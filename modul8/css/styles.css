@@ -370,14 +370,14 @@ bottom: 0;
     }
  }
 
- @media (min-width: 1441px){
+ @media (min-width: 940px){
 
     .main-list{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-items: center;
+        align-items: baseline;
         max-width: 940px;
     }
    
