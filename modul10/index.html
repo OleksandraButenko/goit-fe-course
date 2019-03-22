@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-        <div class="slider">
+     <div class="slider">
         <header class="page-header">
                 <a href="#" class="logo">MoGo</a>
                 <nav class="page-nav">
@@ -55,12 +55,12 @@
                       
 
 
-        <section class="main-services">
+        <section class="services">
                 <header class="titles">
                         <h4 class="subtitle">We work with</h3>
                         <h3 class="title">Amazing Services</h2>
                 </header>
-          <ul class="services">
+          <ul class="services-list">
               <li class="services-item">
                 <svg>
                     <use href="./sprite.svg#alarm-clock"></use>
@@ -120,17 +120,19 @@
         </section>
         <section class="team">
                 <div class="titles">
-                <h4 class="subtitle">Who we are</h3>
-                <h3 class="title">Meet our team</h2>
+                <h4 class="subtitle">Who we are</h4>
+                <h3 class="title">Meet our team</h3>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                </div>
 
                <ul class="team-list">
                    <li class="team-item">
                         <div class="team-item-link">
-                                <img class="team-image" src="img/Layer_1.jpg" alt="team1" width="380"
-                                height="470">
-
+                                        <picture>
+                                                  <source srcset="img/Layer_1.jpg,
+                                                            img/1x2.jpg 2x">
+                                                        <img srcset="img/3.jpg" alt="default image">
+                                                    </picture>
                 <div class="icons">
                                 <a class="facebook" href="#"></a>
                                 <a class="twitter" href="#"></a>
@@ -143,8 +145,11 @@
                    </li>
                    <li class="team-item">
                         <div class="team-item-link">
-                                <img class="team-image" src="img/Layer_2.jpg" alt="team1" width="380"
-                                height="470">
+                                <picture>
+                                     <source srcset="img/Layer_2.jpg,
+                                                     img/2x2.jpg 2x">
+                                                   <img srcset="img/3.jpg" alt="default image">
+                                         </picture>
                                 <div class="icons">
                                                 <a class="facebook" href="#"></a>
                                                 <a class="twitter" href="#"></a>
@@ -157,8 +162,11 @@
                    </li>
                    <li class="team-item">
                         <div class="team-item-link">
-                                <img class="team-image" src="img/Layer_3.jpg" alt="team1" width="380"
-                                height="470">
+                                <picture>
+                                          <source srcset="img/Layer_3.jpg,
+                                               img/3x2.jpg 2x">
+                                        <img srcset="img/3.jpg" alt="default image">
+                                                  </picture>
                                 <div class="icons">
                                                 <a class="facebook" href="#"></a>
                                                 <a class="twitter" href="#"></a>
