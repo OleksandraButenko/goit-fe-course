@@ -39,7 +39,7 @@ body{
     width: 100%;
 }
 
-.page-header{
+.header{
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -51,7 +51,7 @@ body{
 }
 
 
-.logo{
+.header__logo{
     font-family: "Montserrat";
     font-size: 30px;
     font-weight: 700;
@@ -60,14 +60,14 @@ body{
     justify-content:flex-start;
 }
 
-.page-nav{
+.header__nav{
     display: flex;
     justify-content: flex-end;
     max-width:  620px;
     width: 100%;
 }
 
-.page-menu{
+.header__menu{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -76,12 +76,12 @@ body{
     align-items:flex-end;
 }
 
-.page-menu-item{
+.header__menu--item{
     list-style: none;
     position: relative;
 }
 
-.page-menu-link{
+.header__menu--link{
     position: absolute;
     font-family: "Montserrat";
     font-size: 14px;
@@ -94,7 +94,7 @@ body{
     
 }
 
-.page-menu-link:hover:after{
+.header__menu--link:hover:after{
         content: '';
         margin-top: 12px;
         width: 100%;
@@ -103,9 +103,10 @@ body{
         background-color: #fce38a; 
 }
 
-.page-menu-link:hover{
+.header__menu--link:hover{
     color: #fce38a;
 } 
+
 
 
 /* MAIN STYLES */
