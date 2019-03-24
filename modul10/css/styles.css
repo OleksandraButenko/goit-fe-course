@@ -154,7 +154,7 @@ padding-bottom: 50px;
     background-color: #f38181;
 }
 
-.services-list{
+.services__list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -162,7 +162,7 @@ padding-bottom: 50px;
     padding-top: 65px;
 }
 
-.services-item{
+.services__item{
     display: flex;
     list-style: none;
     flex-basis: 335px;
@@ -171,21 +171,19 @@ padding-bottom: 50px;
     align-items: flex-start;
 }
 
-.services-item::before{
+.services__item::before{
   background: url(src="../img/ALARM_1.png");
   width: 32px;
   height: 32px;
 }
 
-.services-item:nth-of-type(n+3){
+.services__item:nth-of-type(n+3){
     margin-bottom: 0;
 }
 
-.img-services{
-    margin-right: 30px;
-}
 
-.services-item-name{
+
+.services__item--name{
     color: #333;
     font-family: "Montserrat";
     font-size: 14px;
@@ -210,22 +208,22 @@ padding-bottom: 50px;
  border-bottom: 1px solid #e5e5e5;
 }
 
-.team-list{
+.team__list{
   padding-top: 70px;
   display: flex;
   justify-content: space-between;
 }
 
-.team-item{
+.team__item{
     list-style: none;
     position: relative;
 }
 
-.team-image{
+.team__image{
     margin-bottom: 20px;
 }
 
-.team-name{
+.team__name{
    text-align: center;
    font-family: "Montserrat";
    font-size: 14px;
@@ -235,7 +233,7 @@ padding-bottom: 50px;
    color: #333;
 }
 
-.team-activity{
+.team__activity{
    text-align: center;
    color: #999;
    font-family: "Roboto";
@@ -250,13 +248,13 @@ padding-bottom: 50px;
 /* FOOTER_SITE STYLES */
 
 
-.site-footer{
+.footer{
    display: flex;
    padding: 25px 0;
    justify-content: space-between;
 }
 
-.footer-text{
+.footer__text{
     color: #333;
     font-family: "Montserrat";
     font-size: 14px;
@@ -269,7 +267,7 @@ span{
     color:  #f38181;
 }
 
-.require-field{
+.require__field{
     width: 230px;
     height: 40px;
     border: 1px solid #e7e7e7;
@@ -282,7 +280,7 @@ span{
    line-height: 24px;
 }
 
-.footer-require{
+.footer__require{
     width: 150px;
     height: 40px;
     background-color: #95e1d3;
@@ -293,11 +291,11 @@ span{
     text-transform: uppercase;
 }
 
-.footer-button{
+.footer__button{
  display: flex;
 }
 
-.team-item{
+.team__item{
     position: relative;    
 }
 
@@ -397,14 +395,12 @@ span{
 }
 
 
-
-
-.team-item{
+.team__item{
     position: relative;
     width: 380px;
 }
 
-.team-item-link{
+.team__item--link{
     display: block;
     width: 100%;
     height: 470px;;
@@ -415,7 +411,7 @@ span{
     transition-timing-function: linear;
 }
 
-.team-item:hover .team-item-link{   
+.team__item:hover .team__item--link{   
     display: block;
     width: 100%;
     background: transparent;    
@@ -425,7 +421,9 @@ span{
     opacity: 1;
 }
 
-.team-item-link:after{
+
+
+.team__item--link:after{
     content: "";
     opacity: 1;
     box-shadow: 10px 10px 0 0 #95e1d3;
@@ -435,14 +433,14 @@ span{
     position: absolute;
 }
 
-.team-item:hover .icons{
+.team__item:hover .icons{
     position: absolute;
     opacity: 1;
     z-index: 2;
 }
 
 
-.services-item svg{
+.services__item svg{
     fill: #95e1d3;
     height: 60px;
 }
@@ -488,13 +486,13 @@ span{
 }
 
 
-.page-menu-link svg {
+.header__menu--link svg {
     fill: #fff;
     width: 20px;
     height: 20px;
 }
 
-.page-menu-link svg:hover{
+.header__menu--link svg:hover{
     fill: #fce38a;
 } 
 
@@ -503,3 +501,4 @@ span{
         background-image: linear-gradient(45deg, rgba(252, 227, 138, 0.72) 0%, rgba(243,129,129,1) 90%), url(../img/eaglex2.jpg);
     }
   }
+
