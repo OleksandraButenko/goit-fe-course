@@ -76,12 +76,12 @@ body{
     align-items:flex-end;
 }
 
-.header__menu--item{
+.header__item{
     list-style: none;
     position: relative;
 }
 
-.header__menu--link{
+.header__link{
     position: absolute;
     font-family: "Montserrat";
     font-size: 14px;
@@ -94,7 +94,7 @@ body{
     
 }
 
-.header__menu--link:hover:after{
+.header__link:hover:after{
         content: '';
         margin-top: 12px;
         width: 100%;
@@ -103,7 +103,7 @@ body{
         background-color: #fce38a; 
 }
 
-.header__menu--link:hover{
+.header__link:hover{
     color: #fce38a;
 } 
 
@@ -486,13 +486,13 @@ span{
 }
 
 
-.header__menu--link svg {
+.header__link svg {
     fill: #fff;
     width: 20px;
     height: 20px;
 }
 
-.header__menu--link svg:hover{
+.header__link svg:hover{
     fill: #fce38a;
 } 
 
@@ -501,4 +501,5 @@ span{
         background-image: linear-gradient(45deg, rgba(252, 227, 138, 0.72) 0%, rgba(243,129,129,1) 90%), url(../img/eaglex2.jpg);
     }
   }
+
 
