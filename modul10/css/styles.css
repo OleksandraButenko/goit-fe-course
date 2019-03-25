@@ -1,0 +1,503 @@
+html {
+    box-sizing: border-box;
+    ;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #999;
+    margin: 0 auto;
+    line-height: 24px;
+
+}
+
+.slider{
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../img/eagle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+}
+
+.header{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0 auto 200px;
+
+}
+
+
+.header__logo{
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    justify-content:flex-start;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: flex-end;
+    max-width:  620px;
+    width: 100%;
+}
+
+.header__menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width:  620px;
+    width: 100%;
+    align-items:flex-end;
+}
+
+.header__item{
+    list-style: none;
+    position: relative;
+}
+
+.header__link{
+    position: absolute;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    transition: color 0.2s linear;
+    
+}
+
+.header__link:hover:after{
+        content: '';
+        margin-top: 12px;
+        width: 100%;
+        height: 3px;
+        display: block;
+        background-color: #fce38a; 
+}
+
+.header__link:hover{
+    color: #fce38a;
+} 
+
+
+
+/* MAIN STYLES */
+
+/*  SECTION SERVICES STYLES */
+
+.wrapper{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.services{
+padding-bottom: 50px;
+}
+
+.titles{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.subtitle{
+    color: #333;
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.title{
+    color: #333;
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.title::after {
+    display: block;
+    content: '';
+    margin: 0 auto;
+    margin-top: 43px;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+}
+
+.services__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 65px;
+}
+
+.services__item{
+    display: flex;
+    list-style: none;
+    flex-basis: 335px;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    align-items: flex-start;
+}
+
+.services__item::before{
+  background: url(src="../img/ALARM_1.png");
+  width: 32px;
+  height: 32px;
+}
+
+.services__item:nth-of-type(n+3){
+    margin-bottom: 0;
+}
+
+
+
+.services__item--name{
+    color: #333;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.description{
+    color: #999;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/*SECTION TEAM STYLES*/
+
+
+.team{
+ padding-bottom: 85px;
+ border-bottom: 1px solid #e5e5e5;
+}
+
+.team__list{
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item{
+    list-style: none;
+    position: relative;
+}
+
+.team__image{
+    margin-bottom: 20px;
+}
+
+.team__name{
+   text-align: center;
+   font-family: "Montserrat";
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   line-height: 21px;
+   color: #333;
+}
+
+.team__activity{
+   text-align: center;
+   color: #999;
+   font-family: "Roboto";
+   font-size: 15px;
+   font-weight: 300;
+   font-style: italic;
+   line-height: 24px;
+}
+
+
+
+/* FOOTER_SITE STYLES */
+
+
+.footer{
+   display: flex;
+   padding: 25px 0;
+   justify-content: space-between;
+}
+
+.footer__text{
+    color: #333;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    align-self: center;
+}
+
+span{
+    color:  #f38181;
+}
+
+.require__field{
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    background-color: #ffffff;
+    color: #cccccc;
+   font-family: "Roboto";
+   font-size: 15px;
+   font-weight: 300;
+   font-style: italic;
+   line-height: 24px;
+}
+
+.footer__require{
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer__button{
+ display: flex;
+}
+
+.team__item{
+    position: relative;    
+}
+
+
+/*----------------*/
+
+.icons{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fce38a;
+    opacity: 0;
+    background:linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+}
+.icons a{
+    transition: background-color 0.2s linear;
+}
+.facebook {
+    top: 0;
+    left:0;
+    height: 56px;
+    width: 56px;
+    border-right: 1px solid #f38181;
+    background-size: cover;
+    border-radius: 50px;
+    background-image: url(../icons/facebook-logo-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(185, 90, 34);
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    background-color: #fce38a;
+}
+
+.twitter {
+    left: 56px;
+    height: 56px;
+    width: 56px;
+    background-size: cover;
+    border-radius: 50px;
+    border-right: 1px solid #f38181;
+    background-image: url(../icons/twitter-social-logotype.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fce38a;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.pinterest {
+    height: 56px;
+    width: 56px;
+    background-size: cover;
+    border-radius: 50px;
+    border-right: 1px solid #f38181;
+    background-image: url(../icons/pinterest-social-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fce38a;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.instagram {
+    height: 56px;
+    width: 56px;
+    background-size: cover;
+    border-radius: 50px;
+    background-image: url(../icons/instagram-social-network-logo-of-photo-camera.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fce38a;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.facebook:hover{
+    background-color: #95e1d3;
+}
+
+.twitter:hover{
+    background-color: #95e1d3;
+}
+
+.pinterest:hover{
+    background-color: #95e1d3;
+}
+
+.instagram:hover{
+    background-color: #95e1d3;
+}
+
+
+.team__item{
+    position: relative;
+    width: 380px;
+}
+
+.team__item--link{
+    display: block;
+    width: 100%;
+    height: 470px;;
+    
+    opacity: 1;
+    transform:rotateX(10deg);
+    transition-duration: 0.2s; 
+    transition-timing-function: linear;
+}
+
+.team__item:hover .team__item--link{   
+    display: block;
+    width: 100%;
+    background: transparent;    
+    background:linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    box-shadow: 10px 10px 0 0 #95e1d3;
+    transform: translate(-10px, -10px);
+    opacity: 1;
+}
+
+
+
+.team__item--link:after{
+    content: "";
+    opacity: 1;
+    box-shadow: 10px 10px 0 0 #95e1d3;
+    transform:rotateX(10deg);
+    transition-duration: 0.2s; 
+    transition-timing-function: linear;
+    position: absolute;
+}
+
+.team__item:hover .icons{
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.services__item svg{
+    fill: #95e1d3;
+    height: 60px;
+}
+
+
+/* SECTION MAIN-TITLE STYLES */
+
+
+.main-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.main-subtitle{
+    color: #fff;
+    font-family: "Kaushan Script";
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.main_title{
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 250px;
+}
+
+.main-link{
+    width: 160px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.header__link svg {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+}
+
+.header__link svg:hover{
+    fill: #fce38a;
+} 
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .slider {
+        background-image: linear-gradient(45deg, rgba(252, 227, 138, 0.72) 0%, rgba(243,129,129,1) 90%), url(../img/eaglex2.jpg);
+    }
+  }

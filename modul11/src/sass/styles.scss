@@ -1,0 +1,451 @@
+/*
+   Import partials below
+*/
+@import './normalize';
+
+@import './base/fonts';
+
+
+html {
+  box-sizing: border-box;
+  ;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$main-color: #fce38a;
+$width: 100%;
+ 
+@mixin row {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+body {
+  width: $width;
+  font-family: "Roboto";
+  font-size: 15px;
+  color: #999;
+  margin: 0 auto;
+  line-height: 24px;
+
+}
+
+.slider {
+  background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../images/eagle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  width: $width;
+}
+
+
+.header {
+  @include row();
+  max-width: 1200px;
+  align-items: center;
+  padding-top: 50px;
+  margin: 0 auto 200px;
+  &__menu{  
+    @include row();
+    max-width: 620px;
+    width: $width;
+    align-items: flex-end;
+  }
+  &__item{
+    list-style: none;
+    position: relative;
+  }
+  &__link{
+    position: absolute;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    transition: color 0.2s linear;
+  }
+}
+
+
+.header__logo {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  justify-content: flex-start;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 620px;
+  width: $width;
+}
+
+
+.header__link:hover:after {
+  content: '';
+  margin-top: 12px;
+  width: $width;
+  height: 3px;
+  display: block;
+  background-color: $main-color;
+}
+
+.header__link:hover {
+  color: $main-color;
+}
+
+
+
+/* MAIN STYLES */
+
+/*  SECTION SERVICES STYLES */
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services {
+  padding-bottom: 50px;
+  &__list{
+    @include row();
+    padding-top: 65px;
+  }
+  &__item{
+    display: flex;
+    list-style: none;
+    flex-basis: 335px;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    align-items: flex-start;
+  }
+  &__item--name{
+    color: #333;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.titles {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.subtitle {
+  color: #333;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.title {
+  color: #333;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.title::after {
+  display: block;
+  content: '';
+  margin: 0 auto;
+  margin-top: 43px;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+}
+
+.description {
+  color: #999;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/*SECTION TEAM STYLES*/
+
+.team {
+  padding-bottom: 85px;
+  border-bottom: 1px solid #e5e5e5;
+  &__list{
+    padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  }
+  &__item{
+    list-style: none;
+  position: relative;
+  width: 380px;
+  }
+}
+
+.team__name {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 21px;
+  color: #333;
+}
+
+.team__activity {
+  text-align: center;
+  color: #999;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 24px;
+}
+
+/* FOOTER_SITE STYLES */
+
+.footer {
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-between;
+  &__text{
+    color: #333;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    align-self: center;
+  }
+  &__require{
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__button{
+    display: flex;
+  }
+}
+
+span {
+  color: #f38181;
+}
+
+.require__field {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+  background-color: #ffffff;
+  color: #cccccc;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 24px;
+}
+
+/*----------------*/
+
+.icons {
+  position: absolute;
+  width: $width;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $main-color;
+  opacity: 0;
+  background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+}
+
+.icons a {
+  transition: background-color 0.2s linear;
+}
+  @mixin social_icons {
+    height: 56px;
+    width: 56px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $main-color;
+    transition: background-color 0.2s linear;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+.facebook {
+  @include social_icons();
+  top: 0;
+  left: 0;
+  background-image: url(../images/facebook-logo-2.svg);
+}
+
+.twitter {
+  left: 56px;
+  border-right: 1px solid #f38181;
+  background-image: url(../images/twitter-social-logotype.svg);
+  @include social_icons();
+}
+
+.pinterest {
+  @include social_icons();
+  border-right: 1px solid #f38181;
+  background-image: url(../images/pinterest-social-logo.svg);
+}
+
+.instagram {
+  @include social_icons();
+  background-image: url(../images/instagram-social-network-logo-of-photo-camera.svg);
+}
+
+.facebook:hover {
+  background-color: #95e1d3;
+}
+
+.twitter:hover {
+  background-color: #95e1d3;
+}
+
+.pinterest:hover {
+  background-color: #95e1d3;
+}
+
+.instagram:hover {
+  background-color: #95e1d3;
+}
+
+.team__item--link {
+  display: block;
+  width: $width;
+  height: 470px;
+  opacity: 1;
+  transform: rotateX(10deg);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.team__item:hover .team__item--link {
+  display: block;
+  width: $width;
+  background: transparent;
+  background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  box-shadow: 10px 10px 0 0 #95e1d3;
+  transform: translate(-10px, -10px);
+  opacity: 1;
+}
+
+
+
+.team__item--link:after {
+  content: "";
+  opacity: 1;
+  box-shadow: 10px 10px 0 0 #95e1d3;
+  transform: rotateX(10deg);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  position: absolute;
+}
+
+.team__item:hover .icons {
+  position: absolute;
+  opacity: 1;
+  z-index: 2;
+}
+
+
+.services__item svg {
+  fill: #95e1d3;
+  height: 60px;
+}
+
+
+/* SECTION MAIN-TITLE STYLES */
+
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-subtitle {
+  color: #fff;
+  font-family: "Kaushan Script";
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+
+.main_title {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 250px;
+}
+
+.main-link {
+  width: 160px;
+  height: 40px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.header__link svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.header__link svg:hover {
+  fill: $main-color;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+  .slider {
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../images/female_sci_fi_cyborg-wallpaper-2560x1600-min.jpg);
+  }
+}
+
+
+
