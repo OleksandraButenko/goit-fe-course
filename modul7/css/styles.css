@@ -61,12 +61,15 @@ img {
 	color: #222222;
 }
 
+<<<<<<< HEAD
 .clearfix:after {
 	content:'';
 	display: table;
 	width: 100%;
 	clear: both;
 }
+=======
+>>>>>>> 6b0ddd0ae28547c5232dbf58d017dd899dfbcba3
 
 
 .page-header {
@@ -240,7 +243,10 @@ margin-bottom: 30px;
     flex-wrap: wrap;
     margin-bottom: 25px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6b0ddd0ae28547c5232dbf58d017dd899dfbcba3
 .name{
     width: 455px;
     height: 50px;
@@ -343,4 +349,7 @@ textarea[name="comments"]:invalid{
     border:2px solid red;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6b0ddd0ae28547c5232dbf58d017dd899dfbcba3

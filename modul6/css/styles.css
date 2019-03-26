@@ -160,12 +160,15 @@ padding-bottom: 50px;
     align-items: flex-start;
 }
 
+<<<<<<< HEAD
 .services-item::before{
   background: url(src="../img/ALARM_1.png");
   width: 32px;
   height: 32px;
 }
 
+=======
+>>>>>>> 6b0ddd0ae28547c5232dbf58d017dd899dfbcba3
 .services-item:nth-of-type(n+3){
     margin-bottom: 0;
 }
@@ -381,8 +384,11 @@ span{
 .team-item-link{
     display: block;
     width: 100%;
+<<<<<<< HEAD
     height: 470px;;
     
+=======
+>>>>>>> 6b0ddd0ae28547c5232dbf58d017dd899dfbcba3
     opacity: 1;
     transform:rotateX(10deg);
     transition-duration: 0.2s; 
@@ -431,7 +437,10 @@ span{
     transition-timing-function: linear;
     opacity: 1;
 } */
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 6b0ddd0ae28547c5232dbf58d017dd899dfbcba3

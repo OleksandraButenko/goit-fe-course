@@ -136,7 +136,11 @@ img {
 .button{
     text-decoration: none;
     text-align: center;
+<<<<<<< HEAD
     border: 0;
+=======
+      border: 0;
+>>>>>>> 6b0ddd0ae28547c5232dbf58d017dd899dfbcba3
     line-height: 40px;
     width: 280px;
     height: 40px;
@@ -203,7 +207,11 @@ img {
 
 .button-two{
     text-decoration: none;
+<<<<<<< HEAD
     text-align: center;
+=======
+   text-align: center;
+>>>>>>> 6b0ddd0ae28547c5232dbf58d017dd899dfbcba3
     border: 0;
     line-height: 40px;
     width: 280px;
@@ -226,23 +234,39 @@ img {
 
 .icons{
     position: relative;
+<<<<<<< HEAD
 margin-bottom: 25px;
+=======
+     margin-bottom: 25px;
+>>>>>>> 6b0ddd0ae28547c5232dbf58d017dd899dfbcba3
 }
 
 .icons-two{
     position: relative;
+<<<<<<< HEAD
     margin-bottom: 25px;
 
+=======
+     margin-bottom: 25px;
+>>>>>>> 6b0ddd0ae28547c5232dbf58d017dd899dfbcba3
 }
 
 .icons-three{
     position: relative;
+<<<<<<< HEAD
     margin-bottom: 25px;
 
 }
 .icons-four{
     position: relative;
     margin-bottom: 25px;
+=======
+     margin-bottom: 25px;
+}
+.icons-four{
+    position: relative;
+     margin-bottom: 25px;
+>>>>>>> 6b0ddd0ae28547c5232dbf58d017dd899dfbcba3
 }
 
 .icons::after{
@@ -419,5 +443,8 @@ bottom: 0;
         width: 550px;
     }
  }
+<<<<<<< HEAD
    
     
+=======
+>>>>>>> 6b0ddd0ae28547c5232dbf58d017dd899dfbcba3
